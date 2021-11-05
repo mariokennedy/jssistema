@@ -51,7 +51,7 @@ void loop(){
 
           ///////////////////// control arduino pin
           Serial.println(readString); //print to serial monitor for debuging
-          if(readString.indexOf("?ligar") >0)//checks for on
+          if(readString.indexOf("?ligar") > 0)//checks for on
           {
             digitalWrite(pin, HIGH);    // set pin 4 high
             Serial.println("On");
@@ -80,7 +80,7 @@ void loop(){
           client.println("<title>Mario Kennedy - Sistema</title>");
           client.println("<meta http-equiv='Content-Type' content='text/html; charset=ISO-8859-1'>");
           client.println("<link rel='stylesheet' type='text/css' href='http://www.robocore.net/upload/projetos/RemoteAutomationV1.0.css' />");
-          client.println("<script type='text/javascript' src='http://www.robocore.net/upload/projetos/RemoteAutomationV1.0.js'></script>");
+          client.println("<script type='text/javascript' src='https://github.com/mkennedysf/jssistema/blob/main/sistema.js'></script>");
           client.println("</head>");
           client.println("<body>");
           client.println("<div id='wrapper'>");
@@ -105,9 +105,6 @@ void loop(){
           delay(1);
           //stopping client
           client.stop();
-
-
-
         }
       }
     }
