@@ -2,6 +2,41 @@ root {
     display: block;
 }
 
+#wrapper {
+    padding-top: 40px;
+    position: relative;
+    width: 530px;
+    height: 600px;
+	margin-right: auto;
+	margin-top: 0;
+	margin-left: auto;
+        background: url(logo2.png) no-repeat left 100px;
+        font-size: 30px;
+        color: gray;
+        text-align: center;
+        font-family: arial;
+}
+
+div.rele_ligado {
+    position: absolute;
+    right: 0px;
+    top: 100px;
+    width: 300px;
+    height: 206px;
+    border: none;
+    background: url(modulo_rele_on.png) no-repeat left top;
+}
+
+div.rele_desligado {
+    position: absolute;
+    right: 0px;
+    top: 100px;
+    width: 300px;
+    height: 206px;
+    border: none;
+    background: url(modulo_rele.png) no-repeat 0 center;
+}
+
 #botao{
     position: absolute;
     right: 30px;

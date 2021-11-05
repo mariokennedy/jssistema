@@ -79,11 +79,11 @@ void loop(){
           client.println("<head>");
           client.println("<title>Mario Kennedy - Sistema</title>");
           client.println("<meta http-equiv='Content-Type' content='text/html; charset=ISO-8859-1'>");
-          client.println("<link rel='stylesheet' type='text/css' href='https://github.com/mkennedysf/jssistema/blob/main/style.css' />");
-          client.println("<script type='text/javascript' src='https://github.com/mkennedysf/jssistema/blob/main/sistema.js'></script>");
+          client.println("<link rel='stylesheet' type='text/css' href='https://raw.githubusercontent.com/mkennedysf/jssistema/main/style.css'/>");
+          client.println("<script type='text/javascript' src='https://raw.githubusercontent.com/mkennedysf/jssistema/main/sistema.js'></script>");
           client.println("</head>");
           client.println("<body>");
-          client.println("<div>");
+          client.println("<div id='wrapper'>");
           client.println("Temperatura:");
           client.println(DHT.temperature, 0);
           client.println("C");
