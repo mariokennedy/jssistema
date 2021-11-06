@@ -96,6 +96,7 @@ void loop(){
           client.print("<div id='estado' style='visibility: hidden;'>");
           client.print(ligado);
           client.println("</div>");
+          client.println("<div id='rele'></div>");
           client.println("<div id='botao'></div>");
           client.println("</div>");
           client.println("<script>AlteraEstadoRele()</script>");
